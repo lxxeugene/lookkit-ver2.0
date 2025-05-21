@@ -1,4 +1,4 @@
-package synerjs.lookkit2nd.codi;
+package synerjs.lookkit2nd.codi.dto;
 
 import lombok.Builder;
 import lombok.Data;

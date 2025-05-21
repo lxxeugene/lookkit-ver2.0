@@ -1,4 +1,4 @@
-package synerjs.lookkit2nd.codi;
+package synerjs.lookkit2nd.codi.entity;
 
 import jakarta.persistence.*;
 import lombok.*;

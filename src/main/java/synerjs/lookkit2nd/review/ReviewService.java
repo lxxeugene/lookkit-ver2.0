@@ -5,8 +5,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.multipart.MultipartFile;
 
-import synerjs.lookkit2nd.codi.Codi;
-import synerjs.lookkit2nd.codi.CodiRepository;
+import synerjs.lookkit2nd.codi.entity.Codi;
+import synerjs.lookkit2nd.codi.repository.CodiRepository;
 import synerjs.lookkit2nd.product.Product;
 import synerjs.lookkit2nd.product.ProductRepository;
 import synerjs.lookkit2nd.user.User;

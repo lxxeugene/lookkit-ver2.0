@@ -6,12 +6,9 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
-import synerjs.lookkit2nd.codi.Codi;
-import synerjs.lookkit2nd.product.Product;
 import synerjs.lookkit2nd.user.User;
 import synerjs.lookkit2nd.user.UserService;
 
-import java.sql.Timestamp;
 import java.util.List;
 
 @RestController

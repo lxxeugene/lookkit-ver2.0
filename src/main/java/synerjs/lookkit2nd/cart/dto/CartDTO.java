@@ -1,4 +1,4 @@
-package synerjs.lookkit2nd.cart;
+package synerjs.lookkit2nd.cart.dto;
 
 import lombok.Builder;
 import lombok.Data;

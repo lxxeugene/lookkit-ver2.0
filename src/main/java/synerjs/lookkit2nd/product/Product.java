@@ -21,8 +21,11 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
-import synerjs.lookkit2nd.codi.Codi;
+import synerjs.lookkit2nd.codi.entity.Codi;
 import synerjs.lookkit2nd.review.Review;
+import jakarta.persistence.*;
+import lombok.*;
+
 
 @Getter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)

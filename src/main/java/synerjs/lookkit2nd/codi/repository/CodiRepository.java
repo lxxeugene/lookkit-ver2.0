@@ -1,11 +1,11 @@
-package synerjs.lookkit2nd.codi;
+package synerjs.lookkit2nd.codi.repository;
 
 import org.springframework.data.jpa.repository.EntityGraph;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
+import synerjs.lookkit2nd.codi.entity.Codi;
 
-import java.lang.annotation.Native;
 import java.util.List;
 
 @Repository

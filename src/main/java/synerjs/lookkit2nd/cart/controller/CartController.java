@@ -1,4 +1,4 @@
-package synerjs.lookkit2nd.cart;
+package synerjs.lookkit2nd.cart.controller;
 
 import java.util.List;
 import java.util.Map;
@@ -8,6 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import synerjs.lookkit2nd.cart.dto.CartDTO;
+import synerjs.lookkit2nd.cart.service.CartService;
 import synerjs.lookkit2nd.user.User;
 import synerjs.lookkit2nd.user.UserService;
 

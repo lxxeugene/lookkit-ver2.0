@@ -1,9 +1,11 @@
-package synerjs.lookkit2nd.codi;
+package synerjs.lookkit2nd.codi.service;
 
 
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import synerjs.lookkit2nd.codi.repository.CodiRepository;
+import synerjs.lookkit2nd.codi.dto.CodiDTO;
+import synerjs.lookkit2nd.codi.entity.Codi;
 import synerjs.lookkit2nd.inquiry.dto.CodiProductDTO;
 import synerjs.lookkit2nd.product.Product;
 import synerjs.lookkit2nd.product.ProductRepository;

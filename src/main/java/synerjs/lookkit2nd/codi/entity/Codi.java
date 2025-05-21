@@ -1,4 +1,4 @@
-package synerjs.lookkit2nd.codi;
+package synerjs.lookkit2nd.codi.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonManagedReference;

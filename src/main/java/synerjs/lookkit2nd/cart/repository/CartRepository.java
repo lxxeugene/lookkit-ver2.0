@@ -1,4 +1,4 @@
-package synerjs.lookkit2nd.cart;
+package synerjs.lookkit2nd.cart.repository;
 
 import java.util.List;
 
@@ -7,6 +7,8 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
+import synerjs.lookkit2nd.cart.dto.CartDTO;
+import synerjs.lookkit2nd.cart.entity.Cart;
 import synerjs.lookkit2nd.user.User;
 
 @Repository
@@ -15,7 +17,7 @@ public interface CartRepository extends JpaRepository<Cart,Long> {
     List<Cart> findByUser(User user);
 
 
-    @Query("SELECT new synerjs.lookkit2nd.cart.CartDTO(" +
+    @Query("SELECT new synerjs.lookkit2nd.cart.dto.CartDTO(" +
        "c.cartId, c.user.userId, p.productId, p.productName, p.brandName, p.productPrice, co.codiId, co.codiDescription, co.codiPrice, c.rentalStartDate, c.rentalEndDate, c.quantity) " +
        "FROM Cart c " +
        "LEFT JOIN Product p ON c.productId = p.productId " +

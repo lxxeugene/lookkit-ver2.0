@@ -4,12 +4,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import synerjs.lookkit2nd.codi.Codi;
+import synerjs.lookkit2nd.codi.entity.Codi;
 import synerjs.lookkit2nd.common.dto.UserOrderDTO;
 import synerjs.lookkit2nd.product.Product;
 import synerjs.lookkit2nd.user.User;
 import synerjs.lookkit2nd.user.UserService;
-import synerjs.lookkit2nd.codi.CodiRepository;
+import synerjs.lookkit2nd.codi.repository.CodiRepository;
 import synerjs.lookkit2nd.product.ProductRepository;
 
 import java.sql.Timestamp;

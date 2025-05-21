@@ -4,7 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import synerjs.lookkit2nd.codi.Codi;
+import synerjs.lookkit2nd.codi.entity.Codi;
 import synerjs.lookkit2nd.product.Product;
 import synerjs.lookkit2nd.wishlist.entity.Wishlist;
 

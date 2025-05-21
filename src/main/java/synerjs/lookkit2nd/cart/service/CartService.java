@@ -1,4 +1,4 @@
-package synerjs.lookkit2nd.cart;
+package synerjs.lookkit2nd.cart.service;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -8,8 +8,11 @@ import java.util.stream.Collectors;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import synerjs.lookkit2nd.codi.Codi;
-import synerjs.lookkit2nd.codi.CodiService;
+import synerjs.lookkit2nd.cart.dto.CartDTO;
+import synerjs.lookkit2nd.cart.entity.Cart;
+import synerjs.lookkit2nd.cart.repository.CartRepository;
+import synerjs.lookkit2nd.codi.entity.Codi;
+import synerjs.lookkit2nd.codi.service.CodiService;
 import synerjs.lookkit2nd.product.Product;
 import synerjs.lookkit2nd.product.ProductService;
 import synerjs.lookkit2nd.user.User;

@@ -1,4 +1,4 @@
-package synerjs.lookkit2nd.cart;
+package synerjs.lookkit2nd.cart.entity;
 
 import jakarta.persistence.*;
 import lombok.*;

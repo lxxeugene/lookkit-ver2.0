@@ -2,9 +2,8 @@ package synerjs.lookkit2nd.wishlist.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
-import synerjs.lookkit2nd.codi.Codi;
+import synerjs.lookkit2nd.codi.entity.Codi;
 import synerjs.lookkit2nd.product.Product;
-import synerjs.lookkit2nd.user.User;
 
 @AllArgsConstructor
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
