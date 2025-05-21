@@ -3,10 +3,9 @@ package synerjs.lookkit2nd.orderManagement.controller;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 import synerjs.lookkit2nd.common.response.BaseResponse;
-import synerjs.lookkit2nd.order.OrderDTO;
-import synerjs.lookkit2nd.order.OrderService;
+import synerjs.lookkit2nd.order.dto.OrderDTO;
+import synerjs.lookkit2nd.order.service.OrderService;
 import synerjs.lookkit2nd.orderManagement.dto.OrderManagementRequestDTO;
-import synerjs.lookkit2nd.orderManagement.dto.OrderManagementResponseDTO;
 import synerjs.lookkit2nd.orderManagement.service.OrderManagementService;
 
 import java.util.List;

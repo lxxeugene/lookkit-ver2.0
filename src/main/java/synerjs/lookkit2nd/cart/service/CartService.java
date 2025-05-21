@@ -13,8 +13,8 @@ import synerjs.lookkit2nd.cart.entity.Cart;
 import synerjs.lookkit2nd.cart.repository.CartRepository;
 import synerjs.lookkit2nd.codi.entity.Codi;
 import synerjs.lookkit2nd.codi.service.CodiService;
-import synerjs.lookkit2nd.product.Product;
-import synerjs.lookkit2nd.product.ProductService;
+import synerjs.lookkit2nd.product.entity.Product;
+import synerjs.lookkit2nd.product.service.ProductService;
 import synerjs.lookkit2nd.user.User;
 
 @Service

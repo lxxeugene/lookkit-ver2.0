@@ -1,12 +1,10 @@
 package synerjs.lookkit2nd.codi.entity;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.*;
-import org.hibernate.annotations.BatchSize;
-import synerjs.lookkit2nd.product.Product;
-import synerjs.lookkit2nd.review.Review;
+import synerjs.lookkit2nd.product.entity.Product;
+import synerjs.lookkit2nd.review.entity.Review;
 import java.util.ArrayList;
 import java.util.List;
 import com.fasterxml.jackson.annotation.JsonIgnore;

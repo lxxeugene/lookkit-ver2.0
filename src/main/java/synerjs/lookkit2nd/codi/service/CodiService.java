@@ -7,8 +7,8 @@ import synerjs.lookkit2nd.codi.repository.CodiRepository;
 import synerjs.lookkit2nd.codi.dto.CodiDTO;
 import synerjs.lookkit2nd.codi.entity.Codi;
 import synerjs.lookkit2nd.inquiry.dto.CodiProductDTO;
-import synerjs.lookkit2nd.product.Product;
-import synerjs.lookkit2nd.product.ProductRepository;
+import synerjs.lookkit2nd.product.entity.Product;
+import synerjs.lookkit2nd.product.repository.ProductRepository;
 
 import java.util.List;
 import java.util.stream.Collectors;

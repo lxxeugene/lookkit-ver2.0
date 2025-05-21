@@ -9,7 +9,7 @@ import synerjs.lookkit2nd.common.dto.InquiryUserDTO;
 import synerjs.lookkit2nd.common.dto.UserOrderDTO;
 import synerjs.lookkit2nd.inquiry.entity.InquiryAnswer;
 import synerjs.lookkit2nd.inquiry.service.InquiryService;
-import synerjs.lookkit2nd.order.OrderService;
+import synerjs.lookkit2nd.order.service.OrderService;
 import java.util.List;
 import java.util.Map;
 

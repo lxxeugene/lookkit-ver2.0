@@ -4,7 +4,7 @@ package synerjs.lookkit2nd.codi.controller;
 import org.springframework.web.bind.annotation.*;
 import synerjs.lookkit2nd.codi.entity.Codi;
 import synerjs.lookkit2nd.codi.service.CodiService;
-import synerjs.lookkit2nd.order.OrderDTO;
+import synerjs.lookkit2nd.order.dto.OrderDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;

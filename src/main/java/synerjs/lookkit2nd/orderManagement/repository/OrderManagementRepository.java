@@ -5,7 +5,7 @@ import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
-import synerjs.lookkit2nd.order.Order;
+import synerjs.lookkit2nd.order.entity.Order;
 import synerjs.lookkit2nd.orderManagement.dto.OrderManagementResponseDTO;
 
 import java.util.List;

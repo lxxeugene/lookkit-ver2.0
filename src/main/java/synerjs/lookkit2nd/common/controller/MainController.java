@@ -20,8 +20,8 @@ import synerjs.lookkit2nd.codi.dto.CodiDTO;
 import synerjs.lookkit2nd.codi.service.CodiService;
 import org.springframework.web.bind.annotation.*;
 import synerjs.lookkit2nd.inquiry.dto.CodiProductDTO;
-import synerjs.lookkit2nd.product.ProductDTO;
-import synerjs.lookkit2nd.product.ProductService;
+import synerjs.lookkit2nd.product.dto.ProductDTO;
+import synerjs.lookkit2nd.product.service.ProductService;
 import synerjs.lookkit2nd.wishlist.dto.WishlistRequestDTO;
 import synerjs.lookkit2nd.wishlist.service.WishlistService;
 

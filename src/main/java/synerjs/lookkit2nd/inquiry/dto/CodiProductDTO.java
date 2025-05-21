@@ -2,7 +2,7 @@ package synerjs.lookkit2nd.inquiry.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
-import synerjs.lookkit2nd.product.Product;
+import synerjs.lookkit2nd.product.entity.Product;
 
 import java.util.List;
 
