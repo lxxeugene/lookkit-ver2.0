@@ -10,7 +10,7 @@ public class IamportService {
     private final IamportClient iamportClient;
 
     public IamportService() {
-        this.iamportClient = new IamportClient("imp40354073", "YOUR_API_SECRET"); // 보안 유의
+        this.iamportClient = new IamportClient("imp40354073", "SECRET"); // 보안 유의
     }
 
     public IamportResponse<Payment> verifyPayment(String impUid) throws Exception {
