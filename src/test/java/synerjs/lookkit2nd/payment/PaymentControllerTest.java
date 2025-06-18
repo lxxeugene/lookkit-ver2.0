@@ -85,4 +85,75 @@ public class PaymentControllerTest {
         assertThat(result.getStatusCode().value()).isEqualTo(400);
         assertThat(result.getBody()).isEqualTo("결제 금액 불일치");
     }
+
+    @Test
+    void 결제응답_NULL() throws Exception {
+        // given
+        PaymentVerifyRequestDto dto = PaymentVerifyRequestDto.builder()
+                .impUid("imp_null")
+                .merchantUid("order_null")
+                .userId(3L)
+                .totalAmount(10000)
+                .build();
+
+        Mockito.when(iamportService.verifyPayment(dto.getImpUid())).thenReturn(null);
+
+        // when
+        var result = paymentController.verifyAndSaveOrder(dto);
+
+        // then
+        assertThat(result.getStatusCode().value()).isEqualTo(400);
+        assertThat(result.getBody()).isEqualTo("결제 정보를 찾을 수 없습니다.");
+    }
+
+    @Test
+    void 결제데이터_NULL() throws Exception {
+        // given
+        PaymentVerifyRequestDto dto = PaymentVerifyRequestDto.builder()
+                .impUid("imp_null_data")
+                .merchantUid("order_null_data")
+                .userId(4L)
+                .totalAmount(20000)
+                .build();
+
+        IamportResponse<Payment> response = Mockito.mock(IamportResponse.class);
+        Mockito.when(response.getResponse()).thenReturn(null);
+
+        Mockito.when(iamportService.verifyPayment(dto.getImpUid())).thenReturn(response);
+
+        // when
+        var result = paymentController.verifyAndSaveOrder(dto);
+
+        // then
+        assertThat(result.getStatusCode().value()).isEqualTo(400);
+        assertThat(result.getBody()).isEqualTo("결제 정보를 찾을 수 없습니다.");
+    }
+
+    @Test
+    void 주문저장_중_예외발생() throws Exception {
+        // given
+        PaymentVerifyRequestDto dto = PaymentVerifyRequestDto.builder()
+                .impUid("imp_fail")
+                .merchantUid("order_fail")
+                .userId(5L)
+                .totalAmount(15000)
+                .build();
+
+        Payment payment = Mockito.mock(Payment.class);
+        Mockito.when(payment.getAmount()).thenReturn(BigDecimal.valueOf(15000));
+
+        IamportResponse<Payment> response = Mockito.mock(IamportResponse.class);
+        Mockito.when(response.getResponse()).thenReturn(payment);
+
+        Mockito.when(iamportService.verifyPayment(dto.getImpUid())).thenReturn(response);
+        Mockito.when(orderService.saveOrder(any(OrderDTO.class))).thenThrow(new RuntimeException("DB 오류"));
+
+        // when
+        var result = paymentController.verifyAndSaveOrder(dto);
+
+        // then
+        assertThat(result.getStatusCode().value()).isEqualTo(500);
+        assertThat(result.getBody().toString()).contains("서버 오류");
+    }
+
 }

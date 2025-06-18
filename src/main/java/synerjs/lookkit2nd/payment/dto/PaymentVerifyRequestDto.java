@@ -1,13 +1,15 @@
 package synerjs.lookkit2nd.payment.dto;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 import synerjs.lookkit2nd.order.dto.OrderDetailDTO;
 import jakarta.validation.constraints.*;
 import java.util.List;
 
 @Getter
 @Setter
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
 public class PaymentVerifyRequestDto {
     @NotBlank
     private String impUid;
@@ -18,7 +20,6 @@ public class PaymentVerifyRequestDto {
     @NotNull
     private Long userId;
 
-    @Min(1000)
     private int totalAmount;
     private String orderAddress;
     private String orderAddressee;
