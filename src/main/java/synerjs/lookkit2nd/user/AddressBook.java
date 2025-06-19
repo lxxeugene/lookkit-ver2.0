@@ -12,6 +12,7 @@ public class AddressBook {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "ADDRESS_ID")
     private Long addressId;
 
     @ManyToOne(fetch = FetchType.LAZY)

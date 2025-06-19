@@ -44,3 +44,4 @@ src/main/resources/serviceAccountKey.json
 
 
 application.yml
+application.properties

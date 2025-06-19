@@ -12,6 +12,7 @@ public class ProductImage {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "PRODUCT_IMAGE_ID")
     private Long productImageId;
 
     @ManyToOne(fetch = FetchType.LAZY)

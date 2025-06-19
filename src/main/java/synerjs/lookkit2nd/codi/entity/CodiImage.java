@@ -11,6 +11,7 @@ import lombok.*;
 public class CodiImage {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "CODI_IMG_ID")
     private Long codiImgId;
 
     @ManyToOne(fetch = FetchType.LAZY)

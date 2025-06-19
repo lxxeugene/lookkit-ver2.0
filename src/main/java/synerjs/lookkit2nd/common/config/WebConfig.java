@@ -14,7 +14,7 @@ import org.springframework.web.servlet.resource.VersionResourceResolver;
 @Configuration
 public class WebConfig implements WebMvcConfigurer {
 
-    @Value("${DOMAIN_URI}")
+    @Value("${DOMAIN_URI:http://localhost:8081}")
     private String domainUri;
 
     @Bean

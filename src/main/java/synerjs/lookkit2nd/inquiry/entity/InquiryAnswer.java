@@ -18,6 +18,7 @@ public class InquiryAnswer {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "ANSWER_ID")
     private Long answerId;
 
     @ManyToOne(fetch = FetchType.LAZY)

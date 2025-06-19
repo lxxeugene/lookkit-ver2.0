@@ -15,8 +15,10 @@ import java.time.LocalDateTime;
 public class Inquiry {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "INQUIRY_ID")
     private Long inquiryId;
 
+    @JoinColumn(name = "USER_ID")
     private Long userId;
 
     private String inquiryTitle;

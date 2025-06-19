@@ -17,6 +17,7 @@ public class Codi {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "CODI_ID")
     private Long codiId;
 
     private String codiName;

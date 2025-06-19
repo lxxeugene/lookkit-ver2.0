@@ -16,6 +16,7 @@ public class Cart {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "CART_ID")
     private Long cartId;
 
     @ManyToOne(fetch = FetchType.LAZY)
@@ -24,7 +25,10 @@ public class Cart {
 
 
     //경진 - 아래에서 코디랑 상품을 ManyToOne으로 관계 매핑중
+    @JoinColumn(name = "CODI_ID")
     private Long codiId;    // 코디 상품 ID, null 가능
+
+    @JoinColumn(name = "PRODUCT_ID")
     private Long productId; // 단일 상품 ID, null 가능
 
 
